@@ -28,6 +28,7 @@ ENV BASE_URL=$BASE_URL
 
 ENV NODE_OPTIONS="--max-old-space-size=3072"
 
+RUN npm install typescript
 RUN npm run build:with-docs
 
 # Production stage
